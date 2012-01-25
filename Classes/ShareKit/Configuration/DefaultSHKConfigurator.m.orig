@@ -87,8 +87,13 @@
 	return @"";
 }
 
+<<<<<<< HEAD
+//Diigo - http://www.diigo.com/api_dev
+-(NSString*)diigoKey {
+=======
 // Diigo - http://www.diigo.com/api_keys/new/
 - (NSString*)diigoKey {
+>>>>>>> f138f8c0db8f230b5b69e56cb257df76da581486
   return @"";
 }
 // Twitter - http://dev.twitter.com/apps/new

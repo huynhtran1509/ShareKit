@@ -1,33 +1,14 @@
 //
-//  DefaultSHKConfigurationDelegate.m
+//  ShareKitDemoConfigurator.m
 //  ShareKit
 //
-//  Created by Edward Dale on 10/16/10.
-
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a copy
-//  of this software and associated documentation files (the "Software"), to deal
-//  in the Software without restriction, including without limitation the rights
-//  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is
-//  furnished to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included in
-//  all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-//  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-//  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-//  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-//  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-//  THE SOFTWARE.
-//
+//  Created by Vilem Kurz on 12.11.2011.
+//  Copyright (c) 2011 Cocoa Miners. All rights reserved.
 //
 
-#import "DefaultSHKConfigurator.h"
+#import "ShareKitDemoConfigurator.h"
 
-@implementation DefaultSHKConfigurator
+@implementation ShareKitDemoConfigurator
 
 /* 
  App Description 
@@ -35,11 +16,11 @@
  These values are used by any service that shows 'shared from XYZ'
  */
 - (NSString*)appName {
-	return @"My App Name";
+	return @"Share Kit Demo App";
 }
 
 - (NSString*)appURL {
-	return @"http://example.com";
+	return @"https://github.com/ShareKit/ShareKit/";
 }
 
 /*
@@ -59,10 +40,11 @@
  leaving that decision up to the user.
  */
 
+
 // Vkontakte
 // SHKVkontakteAppID is the Application ID provided by Vkontakte
 - (NSString*)vkontakteAppId {
-	return @"";
+	return @"2706858";
 }
 
 // Facebook - https://developers.facebook.com/apps
@@ -76,7 +58,7 @@
 // 
 //    Your CFBundleURLSchemes entry: fb555lite
 - (NSString*)facebookAppId {
-	return @"";
+	return @"232705466797125";
 }
 
 - (NSString*)facebookLocalAppId {
@@ -87,9 +69,15 @@
 	return @"";
 }
 
-// Diigo - http://www.diigo.com/api_keys/new/
-- (NSString*)diigoKey {
+<<<<<<< HEAD
+// Diigo - http://diigo.com/api_dev
+-(NSString*)diigoKey {
   return @"";
+=======
+// Diigo - http://www.diigo.com/api_keys/new/
+-(NSString *)diigoKey {
+  return @"f401ddc3546cdf3c";
+>>>>>>> f138f8c0db8f230b5b69e56cb257df76da581486
 }
 // Twitter - http://dev.twitter.com/apps/new
 /*
@@ -109,15 +97,15 @@
  */
 
 - (NSString*)twitterConsumerKey {
-	return @"";
+	return @"48Ii81VO5NtDKIsQDZ3Ggw";
 }
 
 - (NSString*)twitterSecret {
-	return @"";
+	return @"WYc2HSatOQGXlUCsYnuW3UjrlqQj0xvkvvOIsKek32g";
 }
 // You need to set this if using OAuth, see note above (xAuth users can skip it)
 - (NSString*)twitterCallbackUrl {
-	return @"";
+	return @"http://twitter.sharekit.com";
 }
 // To use xAuth, set to 1
 - (NSNumber*)twitterUseXAuth {
@@ -159,11 +147,11 @@
  2 - One needs to setup the flickr app as a "web service" on the flickr authentication flow settings, and enter in your app's custom callback URL scheme. 
  3 - make sure you define and create the same URL scheme in your apps info.plist. It can be as simple as yourapp://flickr */
 - (NSString*)flickrConsumerKey {
-    return @"";
+    return @"72f05286417fae8da2d7e779f0eb1b2a";
 }
 
 - (NSString*)flickrSecretKey {
-    return @"";
+    return @"b5e731f395031782";
 }
 // The user defined callback url
 - (NSString*)flickrCallbackUrl{
@@ -171,34 +159,35 @@
 }
 // Bit.ly (for shortening URLs on Twitter) - http://bit.ly/account/register - after signup: http://bit.ly/a/your_api_key
 - (NSString*)bitLyLogin {
-	return @"";
+	return @"vilem";
 }
 
 - (NSString*)bitLyKey {
-	return @"";
+	return @"R_466f921d62a0789ac6262b7711be8454";
 }
 
 // LinkedIn - https://www.linkedin.com/secure/developer
 - (NSString*)linkedInConsumerKey {
-	return @"";
+	return @"9f8m5vx0yhjf";
 }
 
 - (NSString*)linkedInSecret {
-	return @"";
+	return @"UWGKcBWreMKhwzRG";
 }
 
 - (NSString*)linkedInCallbackUrl {
-	return @"";
+	return @"http://yourdomain.com/callback";
 }
 
 // Foursquare V2 - https://developer.foursquare.com
 - (NSString*)foursquareV2ClientId {
-    return @"";
+    return @"NFJOGLJBI4C4RSZ3DQGR0W4ED5ZWAAE5QO3FW02Z3LLVZCT4";
 }
 
 - (NSString*)foursquareV2RedirectURI {
-    return @"";
+    return @"app://foursquare";
 }
+
 
 /*
  UI Configuration : Basic
@@ -211,9 +200,17 @@
 	return @"UIBarStyleDefault";// See: http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIKitDataTypesReference/Reference/reference.html#//apple_ref/c/econst/UIBarStyleDefault
 }
 
-- (UIColor*)barTintForView:(UIViewController*)vc {
+- (UIColor*)barTintForView:(UIViewController*)vc {    
+	
+    if ([NSStringFromClass([vc class]) isEqualToString:@"SHKTwitter"]) 
+        return [UIColor colorWithRed:0 green:151.0f/255 blue:222.0f/255 alpha:1];
+    
+    if ([NSStringFromClass([vc class]) isEqualToString:@"SHKFacebook"]) 
+        return [UIColor colorWithRed:59.0f/255 green:89.0f/255 blue:152.0f/255 alpha:1];
+    
     return nil;
 }
+
 // Forms
 - (NSNumber*)formFontColorRed {
 	return [NSNumber numberWithInt:-1];// Value between 0-255, set all to -1 for default
@@ -300,5 +297,6 @@
  ------------------
  see DefaultSHKConfigurator.h
  */
+
 
 @end

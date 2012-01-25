@@ -69,9 +69,9 @@
 	return @"";
 }
 
-// Diigo - http://diigo.com/api_dev
--(NSString*)diigoKey {
-  return @"";
+// Diigo - http://www.diigo.com/api_keys/new/
+-(NSString *)diigoKey {
+  return @"f401ddc3546cdf3c";
 }
 // Twitter - http://dev.twitter.com/apps/new
 /*
