@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A52EDF615CB032B00A737D8 /* SHKKippt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52EDF515CB032B00A737D8 /* SHKKippt.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -93,7 +92,6 @@
 		7A0F922B156BA2A0009CB40A /* SHKGoogleReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E011DBE3B9004A1712 /* SHKGoogleReader.m */; };
 		7A0F922C156BA2A0009CB40A /* SHKInstapaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43150A8C11E78697008C6B68 /* SHKInstapaper.m */; };
 		7A0F922D156BA2A0009CB40A /* SHKLinkedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AD00F3142B7B6D000862D9 /* SHKLinkedIn.m */; };
-		7A0F922E156BA2A0009CB40A /* SHKLinkedInOAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AD00F5142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.m */; };
 		7A0F922F156BA2A0009CB40A /* SHKPinboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E311DBE3B9004A1712 /* SHKPinboard.m */; };
 		7A0F9230156BA2A0009CB40A /* SHKReadItLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E611DBE3B9004A1712 /* SHKReadItLater.m */; };
 		7A0F9231156BA2A0009CB40A /* SHKTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C91DF411EBAE4800F31FAE /* SHKTumblr.m */; };
@@ -143,6 +141,8 @@
 		7A4CAA171577BEFA0010E6B3 /* SHKFormFieldCell_PrivateProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4CAA161577BEF90010E6B3 /* SHKFormFieldCell_PrivateProperties.h */; };
 		7A4CAA181577BEFA0010E6B3 /* SHKFormFieldCell_PrivateProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A4CAA161577BEF90010E6B3 /* SHKFormFieldCell_PrivateProperties.h */; };
 		7AA40570146F1D6400685C81 /* ShareKitDemoConfigurator.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AA4056F146F1D6400685C81 /* ShareKitDemoConfigurator.m */; };
+		7AB418E2160761AB002059FA /* SHKKippt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52EDF515CB032B00A737D8 /* SHKKippt.m */; };
+		7AB418E3160761C7002059FA /* SHKKippt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A52EDF515CB032B00A737D8 /* SHKKippt.m */; };
 		7AB534B11552BE7D00171BCE /* SHKCustomFormFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536B111DBE3B9004A1712 /* SHKCustomFormFieldCell.m */; };
 		7AB534B31552BE7D00171BCE /* SHKCustomFormControllerLargeTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BD2BD53153431390042EB86 /* SHKCustomFormControllerLargeTextField.m */; };
 		7AB534BA1552BE7D00171BCE /* SHK.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536A711DBE3B9004A1712 /* SHK.m */; };
@@ -224,7 +224,6 @@
 		7AB535691552BE7D00171BCE /* SHKGoogleReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E011DBE3B9004A1712 /* SHKGoogleReader.m */; };
 		7AB5356B1552BE7D00171BCE /* SHKInstapaper.m in Sources */ = {isa = PBXBuildFile; fileRef = 43150A8C11E78697008C6B68 /* SHKInstapaper.m */; };
 		7AB5356D1552BE7D00171BCE /* SHKLinkedIn.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AD00F3142B7B6D000862D9 /* SHKLinkedIn.m */; };
-		7AB5356F1552BE7D00171BCE /* SHKLinkedInOAMutableURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C0AD00F5142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.m */; };
 		7AB535711552BE7D00171BCE /* SHKPinboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E311DBE3B9004A1712 /* SHKPinboard.m */; };
 		7AB535731552BE7D00171BCE /* SHKReadItLater.m in Sources */ = {isa = PBXBuildFile; fileRef = 43A536E611DBE3B9004A1712 /* SHKReadItLater.m */; };
 		7AB535751552BE7D00171BCE /* SHKTumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C91DF411EBAE4800F31FAE /* SHKTumblr.m */; };
@@ -250,7 +249,6 @@
 		7AB804FC15AC7A21004FB430 /* THTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC781156CFBF400E3303E /* THTTPClient.m */; };
 		7AB804FD15AC7A21004FB430 /* TMemoryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC783156CFBF400E3303E /* TMemoryBuffer.m */; };
 		7AB8050115AC7A5F004FB430 /* TTransportException.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC78C156CFBF400E3303E /* TTransportException.m */; };
-		7AB8050215AC7A64004FB430 /* TSharedProcessorFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC78E156CFBF400E3303E /* TSharedProcessorFactory.m */; };
 		7AB8050315AC7A6A004FB430 /* EDAMErrors.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC792156CFBF400E3303E /* EDAMErrors.m */; };
 		7AB8050415AC7A6F004FB430 /* EDAMLimits.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC794156CFBF400E3303E /* EDAMLimits.m */; };
 		7AB8050515AC7A73004FB430 /* EDAMNoteStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 42EDC796156CFBF400E3303E /* EDAMNoteStore.m */; };
@@ -580,8 +578,6 @@
 		C05E48081430D9BC008F2366 /* SHKFoursquareV2Request.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKFoursquareV2Request.m; sourceTree = "<group>"; };
 		C0AD00F2142B7B6D000862D9 /* SHKLinkedIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLinkedIn.h; sourceTree = "<group>"; };
 		C0AD00F3142B7B6D000862D9 /* SHKLinkedIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLinkedIn.m; sourceTree = "<group>"; };
-		C0AD00F4142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLinkedInOAMutableURLRequest.h; sourceTree = "<group>"; };
-		C0AD00F5142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLinkedInOAMutableURLRequest.m; sourceTree = "<group>"; };
 		C0D3077A147BDC8100E74EA3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		E68738BE1416795C00D8C3DD /* SHKLogout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHKLogout.h; sourceTree = "<group>"; };
 		E68738BF1416795C00D8C3DD /* SHKLogout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHKLogout.m; sourceTree = "<group>"; };
@@ -1398,8 +1394,6 @@
 			children = (
 				C0AD00F2142B7B6D000862D9 /* SHKLinkedIn.h */,
 				C0AD00F3142B7B6D000862D9 /* SHKLinkedIn.m */,
-				C0AD00F4142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.h */,
-				C0AD00F5142B7B6D000862D9 /* SHKLinkedInOAMutableURLRequest.m */,
 			);
 			path = LinkedIn;
 			sourceTree = "<group>";
@@ -1632,7 +1626,6 @@
 				43A5383A11DBE493004A1712 /* RootViewController.m in Sources */,
 				43A5383B11DBE493004A1712 /* ShareKitAppDelegate.m in Sources */,
 				7AA40570146F1D6400685C81 /* ShareKitDemoConfigurator.m in Sources */,
-				1A52EDF615CB032B00A737D8 /* SHKKippt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1640,6 +1633,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB418E3160761C7002059FA /* SHKKippt.m in Sources */,
 				7A0F91D5156BA2A0009CB40A /* SHKCustomFormFieldCell.m in Sources */,
 				7A0F91D6156BA2A0009CB40A /* SHKCustomFormControllerLargeTextField.m in Sources */,
 				7A0F91D9156BA2A0009CB40A /* SHK.m in Sources */,
@@ -1706,7 +1700,6 @@
 				7A0F922B156BA2A0009CB40A /* SHKGoogleReader.m in Sources */,
 				7A0F922C156BA2A0009CB40A /* SHKInstapaper.m in Sources */,
 				7A0F922D156BA2A0009CB40A /* SHKLinkedIn.m in Sources */,
-				7A0F922E156BA2A0009CB40A /* SHKLinkedInOAMutableURLRequest.m in Sources */,
 				7A0F922F156BA2A0009CB40A /* SHKPinboard.m in Sources */,
 				7A0F9230156BA2A0009CB40A /* SHKReadItLater.m in Sources */,
 				7A0F9231156BA2A0009CB40A /* SHKTumblr.m in Sources */,
@@ -1736,6 +1729,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AB418E2160761AB002059FA /* SHKKippt.m in Sources */,
 				7AB534B11552BE7D00171BCE /* SHKCustomFormFieldCell.m in Sources */,
 				7AB534B31552BE7D00171BCE /* SHKCustomFormControllerLargeTextField.m in Sources */,
 				7AB534BA1552BE7D00171BCE /* SHK.m in Sources */,
@@ -1817,7 +1811,6 @@
 				7AB535691552BE7D00171BCE /* SHKGoogleReader.m in Sources */,
 				7AB5356B1552BE7D00171BCE /* SHKInstapaper.m in Sources */,
 				7AB5356D1552BE7D00171BCE /* SHKLinkedIn.m in Sources */,
-				7AB5356F1552BE7D00171BCE /* SHKLinkedInOAMutableURLRequest.m in Sources */,
 				7AB535711552BE7D00171BCE /* SHKPinboard.m in Sources */,
 				7AB535731552BE7D00171BCE /* SHKReadItLater.m in Sources */,
 				7AB535751552BE7D00171BCE /* SHKTumblr.m in Sources */,
@@ -1854,7 +1847,6 @@
 				7AB804FC15AC7A21004FB430 /* THTTPClient.m in Sources */,
 				7AB804FD15AC7A21004FB430 /* TMemoryBuffer.m in Sources */,
 				7AB8050115AC7A5F004FB430 /* TTransportException.m in Sources */,
-				7AB8050215AC7A64004FB430 /* TSharedProcessorFactory.m in Sources */,
 				7AB8050315AC7A6A004FB430 /* EDAMErrors.m in Sources */,
 				7AB8050415AC7A6F004FB430 /* EDAMLimits.m in Sources */,
 				7AB8050515AC7A73004FB430 /* EDAMNoteStore.m in Sources */,
